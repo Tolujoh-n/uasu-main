@@ -12,7 +12,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="button">
+        <Link to="/Waitlist">
         <button>BETA SIGNUP</button>
+        </Link>
       </div>
     </nav>
   );

@@ -227,16 +227,16 @@
 }
 
 .wallet-icon {
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
   margin-right: 0px;
 }
 
 .wallet-address {
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
 }
 
 .profile-icon {
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
   margin-right: 10px;
 }
 
@@ -263,7 +263,7 @@
   height: 100%;
   width: 100%;
   position: relative; /* Make sure the parent is relatively positioned */
-  background-image: url('../images/slider/bg1.png');
+  /* background-image: url('../images/slider/bg1.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -297,12 +297,12 @@
 .connect-btn {
   background-color: transparent;
   padding: 7px;
-  color: #2de1bd;
-  border-color: #2de1bd;
+  color: rgb(84, 61, 212);
+  border-color: rgb(84, 61, 212);
 }
 
 .connect-btn:hover {
-  background-color: #2de1bd;
+  background-color: rgb(84, 61, 212);
   color: black;
   padding: 8px;
 }
@@ -316,7 +316,7 @@
 }
 
 #headeing {
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
 }
 
 
@@ -403,7 +403,7 @@ input[type='radio'] {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
   border-radius: 50%;
   padding: 15px;
   background: #fff6e4;
@@ -432,7 +432,7 @@ input[type='radio'] {
   height: 50px;
   width: 150px;
   border-radius: 10px;
-  background-color: #2de1bd;
+  background-color: rgb(84, 61, 212);
   align-items: center;
   /* Center horizontally */
 
@@ -477,7 +477,7 @@ input[type='radio'] {
   height: 60px;
   width: 200px;
   border-radius: 10px;
-  background-color: #2de1bd;
+  background-color: rgb(84, 61, 212);
 }
 
 .maincard {
@@ -541,24 +541,23 @@ input[type='radio'] {
 #footer .footer-top {
   background: #151515;
   border-bottom: 1px solid #222222;
-  padding: 60px 0 30px 0;
+  padding: 20px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #footer .footer-top .footer-info h3 {
   font-size: 28px;
   margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
+  margin-bottom: 60px;
   line-height: 1;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
 }
 
 #footer .footer-top .footer-info p {
@@ -576,7 +575,7 @@ input[type='radio'] {
   color: #fff;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin-right: 5rem;
   border-radius: 4px;
   text-align: center;
   width: 36px;
@@ -585,7 +584,7 @@ input[type='radio'] {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #2de1bd;
+  background: rgb(84, 61, 212);
   color: #151515;
   text-decoration: none;
 }
@@ -593,7 +592,7 @@ input[type='radio'] {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
   position: relative;
   padding-bottom: 12px;
 }
@@ -610,7 +609,7 @@ input[type='radio'] {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
   font-size: 18px;
   line-height: 1;
 }
@@ -633,7 +632,7 @@ input[type='radio'] {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #2de1bd;
+  color: rgb(84, 61, 212);
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -659,7 +658,7 @@ input[type='radio'] {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #2de1bd;
+  background: rgb(84, 61, 212);
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;

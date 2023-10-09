@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
+import featureImage from "../assets/Img/hodl-hand.png";
 
-function Waitlist() {
+const Waitlist = () => {
   const [email, setEmail] = useState("");
   const [recaptchaValue, setRecaptchaValue] = useState(null);
 
@@ -37,31 +38,35 @@ function Waitlist() {
             <div className="slider-content">
               <div className="container">
                 <div className="slider-text text-center">
-                  <div className="col-xl-12 col-lg-8">
-                    <section className="waitlist-section">
-                      <h1>
-                        <span style={{ color: "goldenrod" }}>Join</span> the{" "}
-                        <span style={{ color: "goldenrod" }}>Waitlist</span>
-                      </h1>
-                      <h2>Submit your email to get on our waitlist.</h2>
-                      <form onSubmit={handleSubmit}>
-                        <input
-                          type="email"
-                          placeholder="Enter your email"
-                          value={email}
-                          onChange={handleEmailChange}
-                          required
-                        />
+                  <h3 className="slide-title">
+                    <span>Join </span> the <span> Waitlist</span>
+                  </h3>
+                  <p id="waitpara" style={{ color: "white" }}>
+                    Submit your email to get on our waitlist.
+                  </p>
+                  <div className="col-lg-12 col-md-6" id="waitform">
+                    <form onSubmit={handleSubmit}>
+                      <input
+                        id="waitinput"
+                        type="email"
+                        placeholder="example@email.com"
+                        value={email}
+                        onChange={handleEmailChange}
+                        required
+                      />
+                      <div id="" className="captcha">
                         <ReCAPTCHA
-                          sitekey="YOUR_RECAPTCHA_SITE_KEY" // Replace with your reCAPTCHA site key
-                          onChange={(value) => setRecaptchaValue(value)}
-                        />
-                        <button type="submit" className="submit-button">
+                        sitekey="The_RECAPTCHA_SITE_KEY" // Replace with reCAPTCHA site key
+                        onChange={(value) => setRecaptchaValue(value)}
+                      />
+                      </div>
+
+                      <p>
+                        <Link to="/Waitlist" className="headbutton">
                           Submit
-                        </button>
-                      </form>
-                      {/* <Link to="/">Go back to Home</Link> Use Link here */}
-                    </section>
+                        </Link>
+                      </p>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -73,6 +78,6 @@ function Waitlist() {
       </div>
     </>
   );
-}
+};
 
 export default Waitlist;

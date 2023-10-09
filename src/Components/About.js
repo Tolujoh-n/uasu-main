@@ -13,21 +13,17 @@ function About() {
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <p style={{ color: 'aliceblue' }} className="fst-italic">
-              An OTC market built on open layer 1 technology
-            </p>
-            <h2 style={{ color: 'goldenrod' }}>
-              How it works
+          
+            <h2 style={{ color: 'rgb(84, 61, 212)' }}>
+              Quick and Easy option Trading
             </h2>
-            <p style={{ color: 'aliceblue' }}>
-            UASU’s platform is designed for high-value, low-frequency trading
-            </p>
+
             <p
               style={{ marginTop: '30px' }}
               href=""
               className="about-started-btn scrollto"
             >
-              Select your BTC Amont to Protect
+              <span id='aboutno'>1</span>Select your BTC Amont to Protect
             </p>
             <br />
             <p
@@ -35,7 +31,7 @@ function About() {
               href=""
               className="about-started-btn scrollto"
             >
-              Set Maximum insurance & Expiration
+              <span id='aboutno'>2</span>Set Maximum insurance & Expiration
             </p>
             <br />
             <p
@@ -43,7 +39,7 @@ function About() {
               href=""
               className="about-started-btn scrollto"
             >
-              Review terms and Sign
+              <span id='aboutno'>3</span>Review terms and Sign
             </p>
           </div>
 
@@ -52,7 +48,7 @@ function About() {
             data-aos="fade-left"
             data-aos-delay="100"
           >
-            <img style={{ height: '25rem', width: '35rem', borderRadius: '10px' }} src={featureImage} className="img-fluid" alt="" />
+            <img id='aboutimge' src={featureImage} className="img-fluid" alt="" />
           </div>
         </div>
       </div>

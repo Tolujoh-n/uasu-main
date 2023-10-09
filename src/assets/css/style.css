@@ -21,6 +21,50 @@ body {
   position: relative;
   overflow: hidden;
 }
+/* #headimg {
+  height: 100%;
+  width: 100%;
+} */
+
+#heropara {
+  margin-top: 25px;
+  color: white;
+  font-size: xx-large;
+  text-align: left;
+  
+}
+#waitpara {
+  margin-top: 25px;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  
+}
+#waitinput {
+  width: 50rem;
+  background-color: #0c0c0c;
+  height: 50px;
+  font-size: larger;
+  border: 1px solid rgb(84, 61, 212);
+  border-radius: 10px;
+
+}
+.captcha {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 40rem;
+  margin-bottom: 20px;
+}
+
+
+
+#heroparared {
+  color: red;
+  font-size: x-large;
+  text-align: center;
+  padding-right: 20rem;
+}
 
 
 /*--------------------------------------------------------------
@@ -104,26 +148,46 @@ section {
 }
 
 .about-started-btn {
-  color: #fff;
-  /* color: rgb(59 130 246 / 0.5); */
-  /* background-image: linear-gradient(to right, #a855f7, #e9d5ff); */
-  /*   background-image: linear-gradient(to right, #272626, black); */
-  border-radius: 5px;
-  padding: 7px 100px 8px 25px;
+  color: whitesmoke;
   white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
+  font-size: 20px;
   display: inline-block;
-  border: 2px solid goldenrod;
+  padding-bottom: 20px;
+  font-weight: lighter;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+#aboutno {
+  font-size: larger;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid rgb(84, 61, 212);
+  margin-right: 10px;
+  padding: 10px;
+  color: rgb(84, 61, 212);
+}
+#aboutimge {
+  height: 70%;
+  width: 45rem;
+  border: 3px solid rgb(84, 61, 212);
+  border-radius: 10px;
+}
 @media (max-width: 992px) {
-  .about-started-btn {
-    padding: 7px 20px 8px 20px;
-    margin-right: 15px;
+
+  #aboutimge {
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
   }
 }
-
+/* #footersign {
+  color: rgb(84, 61, 212);
+  font-size: x-large;
+  padding-bottom: 30px;
+} */
+/* #investline {
+  border-top: 1px solid rgb(15, 87, 125);
+  border-bottom: 1px solid rgb(15, 87, 125);
+} */
 
 
 /*--------------------------------------------------------------
@@ -277,7 +341,7 @@ color: #151515;
   width: 100%;
   height: 15rem;
     /* background-image: linear-gradient(to right, #272626, black); */
-  background: url("../Img//forex-one.jpg") top center;
+  background: url("../Img/forex-one.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -558,7 +622,7 @@ h5 {
 /*** Boxed Body ***/
 
 body.boxed {
-  background: url('../images/bg.png');
+  /* background: url('../images/bg.png'); */
   background-attachment: fixed;
 }
 
@@ -1417,7 +1481,7 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
 }
 
 #main-slide .item.item-2 {
-  background-image: url('../images/slider/bg2.jpg');
+  /* background-image: url('../images/slider/bg2.jpg'); */
 }
 
 
@@ -1690,7 +1754,7 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
   position: relative;
   padding: 0;
   color: #fff;
-  background-image: url('../images/backgrounds/bg-banner.jpg');
+  /* background-image: url('../images/backgrounds/bg-banner.jpg'); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1846,7 +1910,7 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
 }
 
 .bg-image-1 {
-  background-image: url(../images/backgrounds/bg-video.jpg);
+  /* background-image: url(../images/backgrounds/bg-video.jpg); */
   background-size: cover;
   background-position: center center;
   height: 625px;
@@ -2607,7 +2671,7 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
 /*** Bitcoin Calculator ***/
 
 .bitcoin-calculator-section {
-  background-image: url('../images/backgrounds/bg-calculator.jpg');
+  /* background-image: url('../images/backgrounds/bg-calculator.jpg'); */
   height: 218px;
   position: relative;
   background-attachment: fixed;
@@ -3316,7 +3380,7 @@ body.blog .pagination li.active a {
 }
 
 .bg-image-2 {
-  background-image: url(../images/backgrounds/bg-quote.jpg);
+  /* background-image: url(../images/backgrounds/bg-quote.jpg); */
   background-size: cover;
   background-position: center center;
   height: 580px;
@@ -3763,7 +3827,7 @@ section.shop-checkout {
 .call-action-all {
   padding: 0;
   position: relative;
-  background: url('../images/backgrounds/call-to-action-bg.jpg');
+  /* background: url('../images/backgrounds/call-to-action-bg.jpg'); */
   background-size: cover;
   background-position: center center;
 }
@@ -4097,14 +4161,14 @@ section.shop-checkout {
 /*** Error Page ***/
 body.error-page .error {
   height: 100vh;
-  background-image: url('../images/backgrounds/404.jpg');
+  /* background-image: url('../images/backgrounds/404.jpg'); */
   background-size: cover;
   background-position: center center;
   padding: 0;
 }
 
 body.error-page.server-error-page .error {
-  background-image: url('../images/backgrounds/503.jpg');
+  /* background-image: url('../images/backgrounds/503.jpg'); */
 }
 
 body.error-page .error .logo {
