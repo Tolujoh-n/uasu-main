@@ -46,26 +46,26 @@ const Waitlist = () => {
                   </p>
                   <div className="col-lg-12 col-md-6" id="waitform">
                     <form onSubmit={handleSubmit}>
-                      <input
-                        id="waitinput"
-                        type="email"
-                        placeholder="example@email.com"
-                        value={email}
-                        onChange={handleEmailChange}
-                        required
-                      />
-                      <div id="" className="captcha">
-                        <ReCAPTCHA
-                        sitekey="The_RECAPTCHA_SITE_KEY" // Replace with reCAPTCHA site key
-                        onChange={(value) => setRecaptchaValue(value)}
-                      />
+                      <div className="form-group">
+                        <input
+                          id="waitinput"
+                          type="email"
+                          className="form-control"
+                          placeholder="example@email.com"
+                          value={email}
+                          onChange={handleEmailChange}
+                          required
+                        />
                       </div>
-
-                      <p>
-                        <Link to="/Waitlist" className="headbutton">
-                          Submit
-                        </Link>
-                      </p>
+                      <div className="form-group">
+                        <ReCAPTCHA
+                          sitekey="The_RECAPTCHA_SITE_KEY" // Replace with reCAPTCHA site key
+                          onChange={(value) => setRecaptchaValue(value)}
+                        />
+                      </div>
+                      <button type="submit" className="headbutton">
+                        Submit
+                      </button>
                     </form>
                   </div>
                 </div>
