@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
-import featureImage from "../assets/Img/hodl-hand.png";
+import logo from "../assets/img/uasu-logo.png";
+import useimg from "../assets/img/hodl-hand.png";
 
 const Waitlist = () => {
   const [email, setEmail] = useState("");
@@ -25,27 +26,31 @@ const Waitlist = () => {
   };
 
   return (
-    <>
-      <div
-        id="main-slide"
-        className="carousel slide carousel-fade"
-        data-ride="carousel"
-      >
-        {/* Carousel Inner Starts */}
-        <div className="carousel-inner">
-          {/* Carousel Item Starts */}
-          <div className="item active bg-parallax item-1">
-            <div className="slider-content">
-              <div className="container">
-                <div className="slider-text text-center">
-                  <h3 className="slide-title">
-                    <span>Join </span> the <span> Waitlist</span>
-                  </h3>
-                  <p id="waitpara" style={{ color: "white" }}>
-                    Submit your email to get on our waitlist.
-                  </p>
-                  <div className="col-lg-12 col-md-6" id="waitform">
-                    <form onSubmit={handleSubmit}>
+    <><header id="header" className="fixed-top ">
+      <div className="container d-flex align-items-center justify-content-between">
+        <Link to="/">
+          <a href="/" className="logo">
+
+            <img src={logo} alt="" className="img-fluid" />
+          </a>
+        </Link>
+
+        
+      </div>
+    </header>
+    <section id="hero" className="d-flex align-items-center">
+        <div className="container-fluid" data-aos="fade-up">
+          <div className="row justify-content-center">
+            <div className="col-xl-9 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+              <h1>Join our Waiting List</h1>
+            </div>
+            <div className="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+              <img src={useimg} className="img-fluid animated" alt="" />
+            </div>
+            <div className="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+              <h2>Signup for Early Access to UASU</h2>
+              <br></br>
+              <form onSubmit={handleSubmit}>
                       <div className="form-group">
                         <input
                           id="waitinput"
@@ -57,26 +62,24 @@ const Waitlist = () => {
                           required
                         />
                       </div>
+                      <br></br>
                       <div className="form-group">
                         <ReCAPTCHA
                           sitekey="The_RECAPTCHA_SITE_KEY" // Replace with reCAPTCHA site key
                           onChange={(value) => setRecaptchaValue(value)}
                         />
                       </div>
-                      <button type="submit" className="headbutton">
-                        Submit
+                      <button className="btn-get-started scrollto" type="submit">
+                      JOIN
                       </button>
                     </form>
-                  </div>
-                </div>
+              <div>
+                {/* <a href="#about" className="btn-get-started scrollto">JOIN</a> */}
               </div>
             </div>
           </div>
-          {/* Carousel Item Ends */}
         </div>
-        {/* Carousel Inner Ends */}
-      </div>
-    </>
+      </section></>
   );
 };
 

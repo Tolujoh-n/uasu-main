@@ -7,13 +7,15 @@ import Waitlist from "./Components/Waitlist";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
-import "./assets/css/font-awesome.min.css";
-import "./assets/css/bootstrap.min.css";
-import "./assets/css/magnific-popup.css";
-import "./assets/css/select2.min.css";
+
+import "./assets/vendor/bootstrap/css/bootstrap.min.css";
+import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
+import "./assets/vendor/boxicons/css/boxicons.min.css";
+import "./assets/vendor/swiper/swiper-bundle.min.css";
+import "./assets/vendor/aos/aos.css";
+import "./assets/vendor/glightbox/css/glightbox.min.css";
 import "./assets/css/style.css";
-import "./assets/css/dashboard.css";
-import "./assets/css/skins/orange.css";
+
 
 import GLightbox from "glightbox";
 import AOS from "aos";
@@ -30,9 +32,7 @@ function App() {
   });
 
   return (
-    <div className="wrapper">
       <Router>
-        <Navbar />
 
         <Routes>
           <Route
@@ -40,18 +40,21 @@ function App() {
             element={
               
               <>
+                <Navbar />
                 <Header />
+                <main id="main">
                 <About />
                 <Investors />
+                </main>
+                <Footer />
               </>
             }
           />
           <Route path="/waitlist" element={<Waitlist />} />
         </Routes>
 
-        <Footer />
+        
       </Router>
-    </div>
   );
 }
 

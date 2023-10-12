@@ -1,22 +1,34 @@
-import React from 'react';
-import logo from "../assets/Img/uasu-logo.png";
+import React, {useEffect} from 'react';
+import logo from "../assets/img/uasu-logo.png";
 import { Link } from "react-router-dom";
+import { initHeaderScrolled } from "../assets/js/headerScrolled";
+
 
 
 const Navbar = () => {
+  useEffect(() => {
+    initHeaderScrolled();
+  }, []);
   return (
-    <div className="navba" style={{ background: "rgb(15, 87, 125)" }}>
-      <div className="logo">
+    <header id="header" className="fixed-top ">
+      <div className="container d-flex align-items-center justify-content-between">
       <Link to="/">
-        <img src={logo} alt="Logo" />
+        <a href="/" className="logo">
+          
+          <img src={logo} alt="" className="img-fluid" />
+        </a>
         </Link>
-      </div>
-      <div className="button">
+
+        <nav id="navbar" className="navbar">
         <Link to="/Waitlist">
-        <button>BETA SIGNUP</button>
-        </Link>
+          <a className="getstarted scrollto" href="#about">
+            LAUNCH BETA
+          </a>
+          </Link>
+        </nav>
       </div>
-    </div>
+    </header>
+    
   );
 };
 

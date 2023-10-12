@@ -1,23 +1,27 @@
 import React from 'react';
-import featureImage3 from '../assets/Img/bitcoin_startup_labs.png';
+import featureImage3 from '../assets/img/bitcoin_startup_labs.png';
 
 
 function Investors() {
   return (
-    <section id="cta" className="cta">
-      <div className="container" data-aos="zoom-in">
-        <div id='investline'>
-        <div className="text-center">
-          <h1 style={{ color: 'rgb(84, 61, 212)' }}>Investors</h1>
-          <div className='text-center'>
-          <p>
-          <img style={{ height: '3rem', textAlign: 'center' }} src={featureImage3} className="img-fluid" alt="" />
-          </p>
-          </div>
+    <section id="counts" className="counts">
+      <div className="container">
+        <h3>Investors</h3>
+        <div className="row counters">
+          <div id="investimg" className="col-lg-3 col-6 text-center">
+            <a href="/">
+              <img
+                className="center"
+                style={{ height: '80%' }}
+                src={featureImage3}
+                alt=""
+              />
+            </a>
           </div>
         </div>
       </div>
     </section>
+
   );
 }
 

@@ -1,54 +1,32 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
-import featureImage from "../assets/Img/hodl-hand.png";
+import featureImage from "../assets/img/hodl-hand.png";
+import { initHeaderScrolled } from "../assets/js/headerScrolled";
+
 
 const Header = () => {
+  useEffect(() => {
+    initHeaderScrolled();
+  }, []);
   return (
-    <>
-      <div
-        id="main-slide"
-        className="carousel slide carousel-fade"
-        data-ride="carousel"
-      >
-        {/* Carousel Inner Starts */}
-        <div className="carousel-inner">
-          {/* Carousel Item Starts */}
-          <div className="item active bg-parallax item-1">
-            <div className="slider-content">
-              <div className="container">
-                <div className="slider-text text-center">
-                  <h3 className="slide-title">
-                    <span>HOLD </span> BITCOIN <span> PAINLESSLY</span>
-                  </h3>
-                  <div className="row">
-                    <div className="col-lg-3 col-md-6">
-                      <img id="headimg" src={featureImage} className="img-fluid" alt="" />
-                      {/* <img style={{ height: '5rem', width: '35rem', borderRadius: '10px' }} src={featureImage} className="img-fluid" alt="" /> */}
-                    </div>
-
-                    <div className="col-lg-9 col-md-6 footer-newsletter">
-                      <p id="heropara" style={{ color: "white" }}>
-                        Protect from price drop while holding your keys 
-                      </p>
-                      <p id="heroparared" style={{ color: "red" }}>
-                       Unstopable Bitcoin Payoff
-                      </p>
-                    </div>
-                  </div>
-                  <p>
-                    <Link to="/Waitlist" className="headbutton">
-                      BETA SIGNUP
-                    </Link>
-                  </p>
-                </div>
-              </div>
+    <section id="hero" className="d-flex align-items-center">
+      <div className="container-fluid" data-aos="fade-up">
+        <div className="row justify-content-center">
+          <div className="col-xl-9 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1>Freeze your Bitcoin with full Collateralization</h1>
+          </div>
+          <div className="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+            <img src={featureImage} className="img-fluid animated" alt="" />
+          </div>
+          <div className="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2>Unstoppable payoff on Bitcoin</h2>
+            <div>
+              <a href="#about" className="btn-get-started scrollto">JOIN WAITING LIST</a>
             </div>
           </div>
-          {/* Carousel Item Ends */}
         </div>
-        {/* Carousel Inner Ends */}
       </div>
-    </>
+    </section>
   );
 };
 
