@@ -21,7 +21,9 @@ const Header = () => {
           <div className="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h2>Unstoppable payoff on Bitcoin</h2>
             <div>
+            <Link to="/Waitlist">
               <a href="#about" className="btn-get-started scrollto">JOIN WAITING LIST</a>
+            </Link>
             </div>
           </div>
         </div>

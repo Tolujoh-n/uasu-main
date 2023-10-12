@@ -1,5 +1,5 @@
 import React from 'react';
-import featureImage from '../assets/img/about.jpg';
+import featureImage from '../assets/img/freeze.png';
 
 function About() {
   return (
@@ -15,7 +15,7 @@ function About() {
             </ul>
           </div>
           <div className="col-lg-6 order-2 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src={featureImage} className="img-fluid" alt="" />
+            <img id='freezeimg' src={featureImage} className="img-fluid" alt="" />
           </div>
         </div>
       </div>

@@ -69,7 +69,7 @@ const Waitlist = () => {
                           onChange={(value) => setRecaptchaValue(value)}
                         />
                       </div>
-                      <button className="btn-get-started scrollto" type="submit">
+                      <button className="waitbut" type="submit">
                       JOIN
                       </button>
                     </form>
